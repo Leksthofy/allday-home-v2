@@ -1,0 +1,6 @@
+{
+  "name": "Aldei Home",
+  "description": "Painel inteligente e integrado para organização da rotina e gestão da casa",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

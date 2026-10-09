@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aldei Home</title>
+    <meta name="description" content="Painel inteligente e integrado para organização da rotina e gestão da casa" />
+    <meta property="og:title" content="Aldei Home" />
+    <meta property="og:description" content="Painel inteligente e integrado para organização da rotina e gestão da casa" />
+    <script>
+      (function() {
+        try {
+          var orig = window.fetch;
+          var currentFetch = typeof orig === 'function' ? orig.bind(window) : orig;
+          Object.defineProperty(window, 'fetch', {
+            get: function() {
+              return currentFetch;
+            },
+            set: function(val) {
+              currentFetch = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          console.warn('Could not override fetch property descriptor:', e);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
